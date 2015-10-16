@@ -1,0 +1,10 @@
+{
+  "appId": "signuptutorial",
+  "apiKey": "d0a0ca530442d5eb9f70060d47073fbae8510e4c9f911b92981d9dd1d3ba5f08",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,13 @@
+body, html {
+	font-family: "Roboto";
+}
+
+#navbar{
+	background-color: #272D4E;
+}
+#logo{
+	height: 50px;
+	width: 50px;
+	margin-top: 5px;
+
+}
