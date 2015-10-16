@@ -11,3 +11,11 @@ body, html {
 	margin-top: 5px;
 
 }
+#inputBox{
+	width: 30%;
+	margin-top: 200px;
+}
+#btn{
+	background-color: #272D4E;
+	font-family: "Roboto"; 
+}
