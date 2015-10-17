@@ -19,3 +19,10 @@ body, html {
 	background-color: #272D4E;
 	font-family: "Roboto"; 
 }
+.facebook{
+	color: #44619D;
+	cursor: pointer;
+}
+.hidden{
+	display: none;
+}

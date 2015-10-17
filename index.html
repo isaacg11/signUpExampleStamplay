@@ -4,6 +4,7 @@
 	<title>SDK Sign Up Tutorial</title>
 	<link rel="stylesheet" type="text/css" href="public/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 <!--NAVBAR-->
@@ -12,6 +13,8 @@
       <img id="logo" src="public/images/stamplay_logo.png"/>
     </div>
   </nav>
+
+  <p id="userName" class="hidden">Signed up with Facebook</p>
 <!--SIGN UP SECTION-->
  <div id="inputBox" class="row z-depth-3">
     <form class="col s12">
@@ -32,13 +35,20 @@
         	</div>
       	</div>
       	<div class="row">
-      		<a 
+        <div class="input-field col s9">
+          	<a 
       		onclick="signUp()" 
       		id="btn" 
       		class="waves-effect waves-light btn hoverable">
       		Sign Up
       		</a>
-      	</div>
+        </div>
+        <div class="input-field col s3">
+          <i 
+          onclick = "facebook()"
+          class="fa fa-facebook-square small facebook"></i>
+        </div>
+      </div>
     </form>
   </div>
 
