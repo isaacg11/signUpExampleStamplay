@@ -12,17 +12,18 @@ body, html {
 
 }
 #inputBox{
-	width: 30%;
-	margin-top: 200px;
+	width: 40%;
+	margin-top: 70px;
 }
 #btn{
-	background-color: #272D4E;
+	background-color: #414B82;
 	font-family: "Roboto"; 
 }
 .facebook{
 	color: #44619D;
 	cursor: pointer;
+	padding-bottom: 5px;
 }
-.hidden{
-	display: none;
+#userOutput{
+	width: 40%;
 }
