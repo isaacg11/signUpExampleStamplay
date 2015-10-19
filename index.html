@@ -6,11 +6,23 @@
 	<link rel="stylesheet" type="text/css" href="public/css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="container-fluid">
 <!--NAVBAR-->
   <nav>
-    <div id="navbar" class="nav-wrapper center z-depth-2">
-      <img id="logo" src="public/images/stamplay_logo.png"/>
+    <div id="navbar" class="nav-wrapper z-depth-2">
+      <a href="" class="brand-logo center">
+        <img id="logo" src="public/images/stamplay_logo.png"/>
+      </a>
+      <ul class="right">
+        <li>
+          <a 
+          target="_blank" 
+          href="https://github.com/isaacg11/signUpExampleStamplay"
+          class="waves-effect waves-light btn-large github">
+          <i class="fa fa-github left"></i>View Code
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -35,7 +47,7 @@
             <input  
              placeholder="Display Name"
              id="name"
-             type="email">
+             type="text">
           </div>
       </div>
     	 <div class="row">
@@ -43,7 +55,7 @@
           	<input 
           	 placeholder="Email"
           	 id="email"
-          	 type="email">
+          	 type="text">
         	</div>
       	</div>
       	<div class="row">
@@ -51,7 +63,7 @@
           	<input 
           	id="password"
           	placeholder="Password" 
-          	type="password">
+          	type="text">
         	</div>
       	</div>
       	<div class="row">
@@ -72,8 +84,6 @@
       </div>
     </form>
   </div>
-  <br>
-
 
 <!--SDK-->
 <script src="//drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/1.3.0/stamplay.min.js"></script>
