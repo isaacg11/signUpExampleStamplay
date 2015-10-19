@@ -1,5 +1,9 @@
 body, html {
 	font-family: "Roboto";
+	min-height: 100vh;
+	min-width: 100vw;
+	position: cover;
+	background-color: #EEEEEE;
 }
 
 #navbar{
@@ -13,10 +17,10 @@ body, html {
 }
 #inputBox{
 	width: 40%;
-	margin-top: 70px;
+	background-color: #FFFFFF;
 }
 #btn{
-	background-color: #414B82;
+	background-color: #7A7F99;
 	font-family: "Roboto"; 
 }
 .facebook{
@@ -26,4 +30,47 @@ body, html {
 }
 #userOutput{
 	width: 40%;
+	margin-top: 50px;
 }
+.data{
+	color: #B0B2B5;
+}
+#userOutputName{
+	color: #415095;
+}
+#userOutputDate{
+	color: #415095;
+}
+#userOutputEmail{
+	color: #415095;
+}
+#userOutputID{
+	color: #415095;
+}
+  /* label color */
+   .input-field label {
+     color: #ffd700;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #ffd700;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #ffd700;
+     box-shadow: 0 1px 0 0 #ffd700;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #ffd700;
+     box-shadow: 0 1px 0 0 #ffd700;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #ffd700;
+     box-shadow: 0 1px 0 0 #ffd700;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #ffd700;
+   }

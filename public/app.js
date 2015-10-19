@@ -26,13 +26,33 @@ function signUp() {
 		document.getElementById('email').value = "";
 		document.getElementById('password').value = "";
 		Materialize.toast('Success!', 4000);
-});
+	});
 }
 
 function facebook(){
-	var user = new Stamplay.User().Model;
-	user.login('facebook');
+	var newUser = new Stamplay.User().Model;
+	newUser.login('facebook');	
 }
+
+window.onload = function(){
+	var newUser = new Stamplay.User().Model;
+	newUser.currentUser().then(function(){
+	var name = newUser.get('name');
+	var email = newUser.get('email');
+	var date = newUser.get('dt_create');
+	var id = newUser.get('_id');
+
+	document.getElementById('userOutputName').innerHTML = name.givenName + " " + name.familyName;
+	document.getElementById('userOutputEmail').innerHTML = email;
+	document.getElementById('userOutputDate').innerHTML = date;
+	document.getElementById('userOutputID').innerHTML = id;
+
+	document.getElementById('name').value = "";
+	document.getElementById('email').value = "";
+	document.getElementById('password').value = "";
+	Materialize.toast('Success!', 4000);
+	});
+};
 
 function reset(){
 		document.getElementById('userOutputName').innerHTML = '';
