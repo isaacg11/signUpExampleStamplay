@@ -38,20 +38,19 @@ window.onload = function(){
 	var newUser = new Stamplay.User().Model;
 	newUser.currentUser().then(function(){
 	var photo = newUser.get('profileImg');
-	var name = newUser.get('name');
+	var firstName = newUser.instance.identities.facebook._json.first_name;
+	var lastName = newUser.instance.identities.facebook._json.last_name;
 	var email = newUser.get('email');
 	var gender = newUser.instance.identities.facebook._json.gender;
 	var date = newUser.get('dt_create');
 	var id = newUser.get('_id');
 
 	document.getElementById('fbPhoto').src = photo;
-	document.getElementById('fbName').innerHTML = name.givenName + " " + name.familyName;
+	document.getElementById('fbName').innerHTML = firstName + " " + lastName;
 	document.getElementById('fbEmail').innerHTML = email;
 	document.getElementById('fbGender').innerHTML = gender;
 	document.getElementById('fbDate').innerHTML = date;
 	document.getElementById('fbID').innerHTML = id;
-
-	Materialize.toast('Success!', 4000);
 	});
 };
 

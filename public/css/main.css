@@ -5,9 +5,8 @@ body, html {
 	position: cover;
 	background-color: #EEEEEE;
 }
-
 #navbar{
-	background-color: #272D4E;
+	background-color: #3D3F4D;
 	height: 80px;
 }
 #logo{
@@ -15,13 +14,13 @@ body, html {
     height: 70px;
 	margin-top: 5px;
 }
-.github{
+.rsrcbtn{
 	background-color: #FBC02D;
 	color: #000;
 	margin-top: 10px;
 	margin-right: 10px;
 }
-.github:hover{
+.rsrcbtn:hover{
 	background-color: #FBC02D;
 	color: #000;
 }
@@ -32,6 +31,7 @@ body, html {
 #btn{
 	background-color: #7A7F99;
 	font-family: "Roboto"; 
+	width: 100%;
 }
 .inputBoxFB{
 	cursor: pointer;
@@ -39,10 +39,13 @@ body, html {
 	background-color: #FFFFFF;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 #userOutput{
 	width: 40%;
 	margin-top: 30px;
+	margin-right: 92px;
 }
 .data{
 	color: #B0B2B5;
@@ -102,4 +105,11 @@ body, html {
 	width: 100px;
 	border:1px solid;
 	border-color: #EEEEEE;
+}
+.resources{
+	background-color: #272D4E;
+	color: #FFFFFF;
+	width: 20%;
+	margin-right: 50px;
+	margin-top: 10px;
 }
