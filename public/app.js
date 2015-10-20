@@ -37,19 +37,20 @@ function facebook(){
 window.onload = function(){
 	var newUser = new Stamplay.User().Model;
 	newUser.currentUser().then(function(){
+	var photo = newUser.get('profileImg');
 	var name = newUser.get('name');
 	var email = newUser.get('email');
+	var gender = newUser.instance.identities.facebook._json.gender;
 	var date = newUser.get('dt_create');
 	var id = newUser.get('_id');
 
-	document.getElementById('userOutputName').innerHTML = name.givenName + " " + name.familyName;
-	document.getElementById('userOutputEmail').innerHTML = email;
-	document.getElementById('userOutputDate').innerHTML = date;
-	document.getElementById('userOutputID').innerHTML = id;
+	document.getElementById('fbPhoto').src = photo;
+	document.getElementById('fbName').innerHTML = name.givenName + " " + name.familyName;
+	document.getElementById('fbEmail').innerHTML = email;
+	document.getElementById('fbGender').innerHTML = gender;
+	document.getElementById('fbDate').innerHTML = date;
+	document.getElementById('fbID').innerHTML = id;
 
-	document.getElementById('name').value = "";
-	document.getElementById('email').value = "";
-	document.getElementById('password').value = "";
 	Materialize.toast('Success!', 4000);
 	});
 };

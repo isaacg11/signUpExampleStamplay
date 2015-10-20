@@ -25,7 +25,7 @@ body, html {
 	background-color: #FBC02D;
 	color: #000;
 }
-#inputBox{
+.inputBoxLocal{
 	width: 40%;
 	background-color: #FFFFFF;
 }
@@ -33,10 +33,12 @@ body, html {
 	background-color: #7A7F99;
 	font-family: "Roboto"; 
 }
-.facebook{
-	color: #44619D;
+.inputBoxFB{
 	cursor: pointer;
-	padding-bottom: 5px;
+	width: 40%;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #userOutput{
 	width: 40%;
@@ -44,6 +46,9 @@ body, html {
 }
 .data{
 	color: #B0B2B5;
+}
+.fbprop{
+	color: #415095;
 }
 #userOutputName{
 	color: #415095;
@@ -90,4 +95,11 @@ body, html {
 }
 .indicator {
 	background-color: #FBC02D !important;
+}
+#fbPhoto{
+	border-radius: 50%;
+	height: 75px;
+	width: 100px;
+	border:1px solid;
+	border-color: #EEEEEE;
 }

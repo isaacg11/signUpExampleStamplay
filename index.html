@@ -30,9 +30,9 @@
     <div class="col s12 tab-row">
       <ul class="tabs">
         <li class="tab col s3">
-        <a class="active" href="#local">EMAIL & PASSWORD</a></li>
+        <a href="#local">EMAIL & PASSWORD</a></li>
         <li class="tab col s3">
-        <a href="#facebook">FACEBOOK</a></li>
+        <a class="active" href="#facebook">FACEBOOK</a></li>
       </ul>
     </div>
   </div>
@@ -50,7 +50,7 @@
         </ul>
         <br>
 <!--EMAIL & PASSWORD USER SIGN UP SECTION-->
-       <div id="inputBox" class="row z-depth-1">
+       <div id="local" class="row z-depth-1 inputBoxLocal">
           <form class="col s12">
             <div class="row">
                 <div onclick="reset()" class="input-field col s12">
@@ -61,7 +61,7 @@
                    type="text">
                 </div>
             </div>
-             <div class="row">
+              <div class="row">
                 <div class="input-field col s12">
                   <input 
                    placeholder="Email"
@@ -91,15 +91,35 @@
           </form>
         </div>
       </div>
+<!--FACEBOOK USER OUTPUT SECTION-->
+      <div id="facebook" class="col s12">
+         <ul id="userOutput" class="collection container z-depth-1">
+            <li class="collection-item data center">
+            <img src="public/images/fb avatar.gif" id="fbPhoto"/></li>
+            <li class="collection-item data"><b>Display Name:</b>
+            <span class="fbprop" id="fbName"></span></li>
+            <li class="collection-item data"><b>Email: </b>
+            <span class="fbprop" id="fbEmail"></span></li>
+            <li class="collection-item data"><b>Gender: </b>
+            <span class="fbprop" id="fbGender"></span></li>
+            <li class="collection-item data"><b>Dt_Created: </b>
+            <span class="fbprop" id="fbDate"></span></li>
+            <li class="collection-item data"><b>ID: </b>
+            <span class="fbprop" id="fbID"></span></li>
+        </ul>
+        <br>
 <!--FACEBOOK USER SIGN UP SECTION-->
-      </div>
-        <div id="facebook" class="col s12">
-          <div class="input-field col s3">
-            <i 
-            onclick = "facebook()"
-            class="fa fa-facebook-square medium facebook"></i>
+        <div 
+        id="facebook" 
+        class="col s12 container z-depth-1 center inputBoxFB">
+             <a 
+              onclick="facebook()" 
+              id="btn" 
+              class="waves-effect waves-light btn-large">
+              <i class="fa fa-facebook-square right"></i>
+              Sign Up
+              </a>
         </div>
-      </div>
         
 
 
